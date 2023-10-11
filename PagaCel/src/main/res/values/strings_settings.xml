@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ strings_login.xml - app
+  ~ Created by JMORA on 7/2/20 1:45 AM
+  ~ Copyright (c) 2020 . All rights reserved.
+  ~ Last modified 7/2/20 1:45 AM
+  -->
+
+<resources>
+    <string name="act_login_input_phone">Ingresa tu número celular</string>
+    <string name="act_login_input_phone_hint">Número de celular</string>
+    <string name="act_login_register">Registrate y crea tu cuenta PagaCel</string>
+    <string name="act_login_without_account">"Aún no tengo cuenta."</string>
+
+    <string name="act_auth_verify_caps">Verifica tus iniciales</string>
+    <string name="act_auth_input_password">Ingresa tu contraseña</string>
+    <string name="act_auth_input_password_hint">Contraseña</string>
+    <string name="act_auth_wrong_user">No soy yo</string>
+    <string name="act_auth_forgotten_password">Olvidé mi contraseña</string>
+    <string name="act_password_invalid_credentials">Datos de inicio de sesión incorrectos</string>
+    <string name="act_welcome_back_greeting">¡Bienvenido de vuelta, \n%s!</string>
+    <string name="act_welcome_back_use_another_user">Entrar con otro usuario</string>
+    <string name="act_inactive_user_support">Contactar a soporte</string>
+    <string name="act_inactive_user_access_blocked">Lo sentimos, no tienes acceso a la plataforma de PagaCel</string>
+
+
+</resources>

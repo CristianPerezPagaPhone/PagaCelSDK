@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/marginXSmall"
+    android:paddingBottom="@dimen/marginXSmall">
+
+    <TextView
+        android:id="@+id/compatibilityImeiTextView"
+        style="@style/PagaPhone.TextAppearance.TextView.Form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/fr_compatibility_imei"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<com.santalu.maskedittext.MaskEditText
+        android:id="@+id/compatibilityImeiNumberEditText"
+        style="@style/PagaPhone.Widget.EditText.Form"
+        android:layout_width="@dimen/viewFitConstraints"
+        android:layout_height="@dimen/buttonSizeNormal"
+        android:layout_marginStart="@dimen/marginNormal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/marginNormal"
+        android:autofillHints="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/imei_mask"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:maxLength="18"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compatibilityImeiTextView"
+        app:met_mask="@string/imei_mask" />-->
+
+    <EditText
+        android:id="@+id/compatibilityImeiNumberEditText"
+        style="@style/PagaPhone.Widget.EditText.Form"
+        android:layout_width="@dimen/viewFitConstraints"
+        android:layout_height="@dimen/buttonSizeNormal"
+        android:layout_marginStart="@dimen/marginNormal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/marginNormal"
+        android:autofillHints="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/imei_mask"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:maxLength="18"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compatibilityImeiTextView"
+         />
+
+
+    <TextView
+        android:id="@+id/ayudaSubtitleTextView"
+        style="@style/PagaPhone.TextAppearance.TextView.Form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/dialog_ayuda_imei_description"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/compatibilityImeiNumberEditText"
+        app:layout_constraintTop_toBottomOf="@+id/compatibilityImeiNumberEditText" />
+
+    <TextView
+        android:id="@+id/stepOneHelpTextView"
+        style="@style/PagaPhone.TextAppearance.TextView.Form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:text="@string/dialog_ayuda_imei_step_one"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayudaSubtitleTextView" />
+
+    <TextView
+        android:id="@+id/stepTwoTextView"
+        style="@style/PagaPhone.TextAppearance.TextView.Form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:layout_marginEnd="16dp"
+        android:text="@string/dialog_ayuda_imei_step_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepOneHelpTextView" />
+
+    <TextView
+        android:id="@+id/compatibilityDescriptionTextView"
+        style="@style/PagaPhone.TextAppearance.TextView.Form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/fr_compatibility_description"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepTwoTextView" />
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

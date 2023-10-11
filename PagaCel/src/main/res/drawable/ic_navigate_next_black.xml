@@ -1,0 +1,17 @@
+<!--
+  ~ ic_navigate_next_black.xml - ui
+  ~ Created by JMORA on 6/28/20 11:47 PM
+  ~ Copyright (c) 2020 . All rights reserved.
+  ~ Last modified 6/28/20 11:47 PM
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:tint="#3E3E3E"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M10,6L8.59,7.41 13.17,12l-4.58,4.59L10,18l6,-6z" />
+</vector>

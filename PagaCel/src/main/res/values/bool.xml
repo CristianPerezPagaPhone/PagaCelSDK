@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ bool.xml - ui
+  ~ Created by iamlordalvarado on 6/4/20 1:13 PM
+  ~ Copyright (c) 2020 . All rights reserved.
+  ~ Last modified 6/4/20 1:13 PM
+  -->
+
+<resources>
+    <bool name="lightStatusBar">false</bool>
+    <bool name="lightNavigationBar">true</bool>
+</resources>

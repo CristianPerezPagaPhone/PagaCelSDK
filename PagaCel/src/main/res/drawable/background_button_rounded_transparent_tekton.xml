@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ background_button_rounded_transparent.xml - app
+  ~ Created by JMORA on 6/23/20 2:20 PM
+  ~ Copyright (c) 2020 . All rights reserved.
+  ~ Last modified 6/23/20 2:20 PM
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/background" />
+            <stroke android:width="@dimen/separatorHeight" android:color="@color/greenTekton" />
+            <corners android:radius="@dimen/radiusSmall" />
+        </shape>
+    </item>
+</selector>

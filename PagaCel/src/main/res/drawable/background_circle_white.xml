@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ background_circle_white.xml - ui
+  ~ Created by JMORA on 8/6/20 1:59 AM
+  ~ Copyright (c) 2020 . All rights reserved.
+  ~ Last modified 8/6/20 1:59 AM
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:width="@dimen/iconSize" android:color="@android:color/white" />
+        </shape>
+    </item>
+</selector>

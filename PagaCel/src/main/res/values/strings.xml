@@ -1,0 +1,38 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_volte_help">Validación de configuración</string>
+    <string name="title_to_back">Volver</string>
+    <string name="act_cash_in_help_title">¿Como hacer %s?</string>
+    <string name="cta_tutorial_volte">Configuración de Volte</string>
+    <string name="cta_tutorial_mobile_data">Configuración de Datos</string>
+    <string name="cta_tutorial_roaming">Configuración de roaming</string>
+    <string name="cta_tutorial_apn">Configuración APN</string>
+
+    <string name="act_settings_validation_title">Validación de configuración</string>
+
+    <string name="act_tutorial_go_to_imei_title">Valida la compatibilidad de tu linea</string>
+    <string name="act_tutorial_go_to_volte_title">Configuración de VoLTE</string>
+    <string name="act_tutorial_go_to_data_title">Configuración de Datos</string>
+    <string name="act_tutorial_go_to_roaming_title">Configuración de Roaming</string>
+    <string name="act_tutorial_go_to_apn_title">Configuración de APN</string>
+    <string name="act_tutorial_go_to_validate_line_status_title">Estatus de mi servicio</string>
+
+    <string name="dialog_imei_compatibility_title">Validar compatibilidad</string>
+    <string name="dialog_password_message">Para continuar, necesitamos comprobar tu identidad, por favor introduce tu contraseña</string>
+    <string name="accept">Aceptar</string>
+    <string name="act_phone_number">Introduce tu número celular</string>
+    <string name="act_send_otp">Solicitar OTP</string>
+    <string name="act_otp_description">Ingresa el código de 6 dígitos enviado a tu celular por SMS</string>
+    <string name="act_otp_validation">Introduce tu número celular</string>
+    <string name="act_request_new_opt">Enviar otro código</string>
+    <string name="act_check_service">Verificar Servicio</string>
+
+
+    <!--Campaña para cash in-->
+    <string name="act_cash_in_step_one_title">1.- Genera la referencia, indicando el monto a depositar (recuerda que cada referencia creada tiene vigencia de 1 dia)</string>
+    <string name="act_cash_in_step_two_title">2.- Acude al comercio e indica al cajero que deseas hacer un Deposito PESPAY.</string>
+    <string name="act_cash_in_step_three_title">3.- Proporciona la referencia que creaste anteriormente.</string>
+    <string name="act_cash_in_step_four_title">4.- Paga el importe del depósito más la comisión que indique el comercio.</string>
+    <string name="act_cash_in_step_five_title">5.- Listo, tu dinero ha sido abonara en segundos.</string>
+
+</resources>

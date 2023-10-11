@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTekton"
+    tools:context=".sdk.compatibility.orange_compatibility.view.activities.AutoSettingsMenuActivity">
+
+    <ImageView
+        android:id="@+id/tutorialBackgroundTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/backgroundImageHeightSmall"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myPlanToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:layout_marginTop="@dimen/marginStandard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tutorialTitleTextView"
+                style="@style/PagaPhone.TextAppearance.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical|start"
+                android:text="@string/act_tutorial_go_to_validate_line_status_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="585dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/autoSettingsGoToBackTextView"
+        app:layout_constraintTop_toBottomOf="@+id/tutorialBackgroundTop"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/myPlanItemOfferInfoCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:elevation="@dimen/elevationXSmall"
+                app:cardCornerRadius="@dimen/radiusNormal"
+                >
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_card_orange"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:id="@+id/myPlanItemPhoneTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.FormXSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="45-4367-8789"
+                        android:textColor="@color/whiteTekton"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+
+                        tools:layout_editor_absoluteY="45dp" />
+
+                    <TextView
+                        android:id="@+id/myPlanItemOfferTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.FormXSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/act_myplan_no_offer"
+                        android:textColor="@color/whiteTekton"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/myPlanItemLogoImageView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/myPlanItemPhoneTextView" />
+
+                    <ImageView
+                        android:id="@+id/myPlanItemLogoImageView"
+                        style="@style/PagaPhone.TextAppearance.TextView.FormXSmall"
+                        android:layout_width="79dp"
+                        android:layout_height="62dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_logo_tran_pagacel" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/myPlanItemLayoutBody"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+
+                        app:layout_constraintEnd_toEndOf="@+id/myPlanItemLogoImageView"
+                        app:layout_constraintStart_toStartOf="@+id/myPlanItemOfferTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/myPlanItemOfferTextView">
+
+                        <TextView
+                            android:id="@+id/myPlanItemStartDateTextView"
+                            style="@style/PagaPhone.TextAppearance.TextView.FormXSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="48dp"
+                            android:text="Inicio"
+                            android:textColor="@color/whiteTekton"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/myPlanItemDaysPassedTextView"
+                            style="@style/PagaPhone.TextAppearance.TextView.FormXSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Días Transcurridos"
+                            android:textColor="@color/whiteTekton"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/myPlanItemDateProgressBar"
+                            app:layout_constraintTop_toBottomOf="@+id/myPlanItemDateProgressBar" />
+
+                        <TextView
+                            android:id="@+id/myPlanItemDaysToGoTextView"
+                            style="@style/PagaPhone.TextAppearance.TextView.FormXSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Días Por Transcurrir"
+                            android:textColor="@color/whiteTekton"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/myPlanItemDateProgressBar"
+                            app:layout_constraintTop_toBottomOf="@+id/myPlanItemDateProgressBar" />
+
+                        <TextView
+                            android:id="@+id/myPlanItemEndDateTextView"
+                            style="@style/PagaPhone.TextAppearance.TextView.FormXSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="48dp"
+                            android:text="Fin"
+                            android:textColor="@color/whiteTekton"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/myPlanItemStartDateFormatTextView"
+                            style="@style/PagaPhone.TextAppearance.TextView.FormXSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="00/00/0000"
+                            android:textColor="@color/whiteTekton"
+                            app:layout_constraintEnd_toEndOf="@+id/myPlanItemStartDateTextView"
+                            app:layout_constraintStart_toStartOf="@+id/myPlanItemStartDateTextView"
+                            app:layout_constraintTop_toBottomOf="@+id/myPlanItemStartDateTextView" />
+
+                        <TextView
+                            android:id="@+id/myPlanItemDaysPassedFormatTextView"
+                            style="@style/PagaPhone.TextAppearance.TextView.FormXSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="0"
+                            android:textColor="@color/whiteTekton"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/myPlanItemDaysPassedTextView"
+                            app:layout_constraintStart_toStartOf="@+id/myPlanItemDaysPassedTextView"
+                            app:layout_constraintTop_toBottomOf="@+id/myPlanItemDaysPassedTextView" />
+
+                        <TextView
+                            android:id="@+id/myPlanItemDaysToGoFormatTextView"
+                            style="@style/PagaPhone.TextAppearance.TextView.FormXSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="0"
+                            android:textColor="@color/whiteTekton"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/myPlanItemDaysToGoTextView"
+                            app:layout_constraintStart_toStartOf="@+id/myPlanItemDaysToGoTextView"
+                            app:layout_constraintTop_toBottomOf="@+id/myPlanItemDaysToGoTextView" />
+
+                        <TextView
+                            android:id="@+id/myPlanItemEndDateFormatTextView"
+                            style="@style/PagaPhone.TextAppearance.TextView.FormXSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00/00/0000"
+                            android:textColor="@color/whiteTekton"
+                            app:layout_constraintEnd_toEndOf="@+id/myPlanItemEndDateTextView"
+                            app:layout_constraintStart_toStartOf="@+id/myPlanItemEndDateTextView"
+                            app:layout_constraintTop_toBottomOf="@+id/myPlanItemEndDateTextView" />
+
+                        <ProgressBar
+                            android:id="@+id/myPlanItemDateProgressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:max="100"
+                            android:progress="30"
+                            app:layout_constraintEnd_toEndOf="@+id/myPlanItemEndDateFormatTextView"
+                            app:layout_constraintStart_toStartOf="@+id/myPlanItemStartDateFormatTextView"
+                            app:layout_constraintTop_toBottomOf="@+id/myPlanItemStartDateFormatTextView" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:padding="@dimen/marginSmall">
+
+                <TextView
+                    android:id="@+id/labelInternetTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Internet Nacional: 0 MB"
+                    android:textColor="@color/primaryDark"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/labelInternetConsumedTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Consumido"
+                    app:layout_constraintStart_toEndOf="@+id/internetImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/internetProgressBar" />
+
+                <TextView
+                    android:id="@+id/labelInternetAvailableTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Disponible"
+                    app:layout_constraintEnd_toEndOf="@+id/internetProgressBar"
+                    app:layout_constraintTop_toBottomOf="@+id/internetProgressBar" />
+
+                <ImageView
+                    android:id="@+id/internetImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/labelInternetTextView"
+                    app:srcCompat="@drawable/ic_internet" />
+
+                <ProgressBar
+                    android:id="@+id/internetProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:max="100"
+                    android:progress="0"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/internetImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/labelInternetTextView" />
+
+                <TextView
+                    android:id="@+id/internetConsumedFormatTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="0 MB"
+                    app:layout_constraintEnd_toEndOf="@+id/labelInternetConsumedTextView"
+                    app:layout_constraintStart_toStartOf="@+id/labelInternetConsumedTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/labelInternetConsumedTextView" />
+
+                <TextView
+                    android:id="@+id/internetAvailableFormatTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="0 MB"
+                    app:layout_constraintEnd_toEndOf="@+id/labelInternetAvailableTextView"
+                    app:layout_constraintStart_toStartOf="@+id/labelInternetAvailableTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/labelInternetAvailableTextView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/offerMbICardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="@dimen/elevationXSmall"
+                android:backgroundTint="@color/background"
+                app:cardCornerRadius="@dimen/radiusNormal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/offerMbCardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:id="@+id/labelInternetITextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Internet Roaming: 0 MB"
+                        android:textColor="@color/primaryDark"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/labelInternetIConsumedTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Consumido"
+                        app:layout_constraintStart_toEndOf="@+id/internetIImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/internetIProgressBar" />
+
+                    <TextView
+                        android:id="@+id/labelInternetIAvailableTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="Disponible"
+                        app:layout_constraintEnd_toEndOf="@+id/internetIProgressBar"
+                        app:layout_constraintTop_toBottomOf="@+id/internetIProgressBar" />
+
+                    <ImageView
+                        android:id="@+id/internetIImageView"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelInternetITextView"
+                        app:srcCompat="@drawable/ic_internet" />
+
+                    <ProgressBar
+                        android:id="@+id/internetIProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:max="100"
+                        android:progress="0"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/internetIImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelInternetITextView" />
+
+                    <TextView
+                        android:id="@+id/internetIConsumedFormatTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="0 MB"
+                        app:layout_constraintEnd_toEndOf="@+id/labelInternetIConsumedTextView"
+                        app:layout_constraintStart_toStartOf="@+id/labelInternetIConsumedTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelInternetIConsumedTextView" />
+
+                    <TextView
+                        android:id="@+id/internetIAvailableFormatTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="0 MB"
+                        app:layout_constraintEnd_toEndOf="@+id/labelInternetIAvailableTextView"
+                        app:layout_constraintStart_toStartOf="@+id/labelInternetIAvailableTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelInternetIAvailableTextView" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/offerMinutesCardView"
+                android:backgroundTint="@color/background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="@dimen/elevationXSmall"
+                app:cardCornerRadius="@dimen/radiusNormal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/offerMbICardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:id="@+id/labelMinutesTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Minutos Nacionales: 0 Min"
+                        android:textColor="@color/primaryDark"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/labelMinutesConsumedTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Consumido"
+                        app:layout_constraintStart_toEndOf="@+id/minutesImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/minutesProgressBar" />
+
+                    <TextView
+                        android:id="@+id/labelMinutesAvailableTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="Disponible"
+                        app:layout_constraintEnd_toEndOf="@+id/minutesProgressBar"
+                        app:layout_constraintTop_toBottomOf="@+id/minutesProgressBar" />
+
+                    <ImageView
+                        android:id="@+id/minutesImageView"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelMinutesTextView"
+                        app:srcCompat="@drawable/ic_minutes" />
+
+                    <ProgressBar
+                        android:id="@+id/minutesProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:max="100"
+                        android:progress="0"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/minutesImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelMinutesTextView" />
+
+                    <TextView
+                        android:id="@+id/minutesConsumedFormatTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="0 Min"
+                        app:layout_constraintEnd_toEndOf="@+id/labelMinutesConsumedTextView"
+                        app:layout_constraintStart_toStartOf="@+id/labelMinutesConsumedTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelMinutesConsumedTextView" />
+
+                    <TextView
+                        android:id="@+id/minutesAvailableFormatTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="0 Min"
+                        app:layout_constraintEnd_toEndOf="@+id/labelMinutesAvailableTextView"
+                        app:layout_constraintStart_toStartOf="@+id/labelMinutesAvailableTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelMinutesAvailableTextView" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/offerMinRCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/background"
+                android:elevation="@dimen/elevationXSmall"
+                app:cardCornerRadius="@dimen/radiusNormal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/offerMinutesCardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:id="@+id/labelMinRTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Minutos Roaming: 0 Min"
+                        android:textColor="@color/primaryDark"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/labelMinRConsumedTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Consumido"
+                        app:layout_constraintStart_toEndOf="@+id/MinRImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/MinRProgressBar" />
+
+                    <TextView
+                        android:id="@+id/labelMinRAvailableTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="Disponible"
+                        app:layout_constraintEnd_toEndOf="@+id/MinRProgressBar"
+                        app:layout_constraintTop_toBottomOf="@+id/MinRProgressBar" />
+
+                    <ImageView
+                        android:id="@+id/MinRImageView"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelMinRTextView"
+                        app:srcCompat="@drawable/ic_minutes" />
+
+                    <ProgressBar
+                        android:id="@+id/MinRProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:max="100"
+                        android:progress="0"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/MinRImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelMinRTextView" />
+
+                    <TextView
+                        android:id="@+id/MinRConsumedFormatTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="0 Min"
+                        app:layout_constraintEnd_toEndOf="@+id/labelMinRConsumedTextView"
+                        app:layout_constraintStart_toStartOf="@+id/labelMinRConsumedTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelMinRConsumedTextView" />
+
+                    <TextView
+                        android:id="@+id/MinRAvailableFormatTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="0 Min"
+                        app:layout_constraintEnd_toEndOf="@+id/labelMinRAvailableTextView"
+                        app:layout_constraintStart_toStartOf="@+id/labelMinRAvailableTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelMinRAvailableTextView" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/offerSMSCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/background"
+                android:elevation="@dimen/elevationXSmall"
+                app:cardCornerRadius="@dimen/radiusNormal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/offerMinRCardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:id="@+id/labelSMSTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="SMS Nacionales: 0 SMS"
+                        android:textColor="@color/primaryDark"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/labelSMSConsumedTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Consumido"
+                        app:layout_constraintStart_toEndOf="@+id/SMSImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/SMSProgressBar" />
+
+                    <TextView
+                        android:id="@+id/labelSMSAvailableTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="Disponible"
+                        app:layout_constraintEnd_toEndOf="@+id/SMSProgressBar"
+                        app:layout_constraintTop_toBottomOf="@+id/SMSProgressBar" />
+
+                    <ImageView
+                        android:id="@+id/SMSImageView"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelSMSTextView"
+                        app:srcCompat="@drawable/ic_sms" />
+
+                    <ProgressBar
+                        android:id="@+id/SMSProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:max="100"
+                        android:progress="0"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/SMSImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelSMSTextView" />
+
+                    <TextView
+                        android:id="@+id/SMSConsumedFormatTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="0 SMS"
+                        app:layout_constraintEnd_toEndOf="@+id/labelSMSConsumedTextView"
+                        app:layout_constraintStart_toStartOf="@+id/labelSMSConsumedTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelSMSConsumedTextView" />
+
+                    <TextView
+                        android:id="@+id/SMSAvailableFormatTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="0 SMS"
+                        app:layout_constraintEnd_toEndOf="@+id/labelSMSAvailableTextView"
+                        app:layout_constraintStart_toStartOf="@+id/labelSMSAvailableTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelSMSAvailableTextView" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/offerSMSRCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/background"
+                android:elevation="@dimen/elevationXSmall"
+                app:cardCornerRadius="@dimen/radiusNormal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/offerSMSCardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:id="@+id/labelSMSRTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="SMS Roaming: 0 SMS"
+                        android:textColor="@color/primaryDark"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/labelSMSRConsumedTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Consumido"
+                        app:layout_constraintStart_toEndOf="@+id/SMSRImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/SMSRProgressBar" />
+
+                    <TextView
+                        android:id="@+id/labelSMSRAvailableTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="Disponible"
+                        app:layout_constraintEnd_toEndOf="@+id/SMSRProgressBar"
+                        app:layout_constraintTop_toBottomOf="@+id/SMSRProgressBar" />
+
+                    <ImageView
+                        android:id="@+id/SMSRImageView"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelSMSRTextView"
+                        app:srcCompat="@drawable/ic_sms" />
+
+                    <ProgressBar
+                        android:id="@+id/SMSRProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:max="100"
+                        android:progress="0"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/SMSRImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelSMSRTextView" />
+
+                    <TextView
+                        android:id="@+id/SMSRConsumedFormatTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="0 SMS"
+                        app:layout_constraintEnd_toEndOf="@+id/labelSMSRConsumedTextView"
+                        app:layout_constraintStart_toStartOf="@+id/labelSMSRConsumedTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelSMSRConsumedTextView" />
+
+                    <TextView
+                        android:id="@+id/SMSRAvailableFormatTextView"
+                        style="@style/PagaPhone.TextAppearance.TextView.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="0 SMS"
+                        app:layout_constraintEnd_toEndOf="@+id/labelSMSRAvailableTextView"
+                        app:layout_constraintStart_toStartOf="@+id/labelSMSRAvailableTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/labelSMSRAvailableTextView" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/myPlanGoToBackTextView"
+        style="@style/PagaPhone.Widget.TextView.Form.Action"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonSizeNormal"
+        android:drawablePadding="@dimen/marginXSmall"
+        android:gravity="center"
+        android:paddingStart="@dimen/marginXSmall"
+        android:paddingEnd="@dimen/marginXSmall"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.998" />
+</androidx.constraintlayout.widget.ConstraintLayout>

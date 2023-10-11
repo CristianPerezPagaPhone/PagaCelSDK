@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PagaPhone.Widget" />
+
+    <style name="PagaPhone.Widget.Button" />
+    <style name="PagaPhone.Widget.TextView" />
+
+    <style name="PagaPhone.Widget.EditText" />
+
+    <style name="PagaPhone.Widget.Button.Form">
+        <item name="android:background">@drawable/background_form_button_transparent</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.Button</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PagaPhone.Widget.Button.Body">
+        <item name="android:background">@drawable/background_button_rounded_transparent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.TextView.Form</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="PagaPhone.Widget.Button.Form.Action">
+        <item name="android:background">@drawable/background_form_action_button_rounded</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.TextView.Action</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PagaPhone.Widget.Button.Form.Action.Tekton">
+        <item name="android:background">@drawable/background_form_action_text_view_tekton</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.TextView.Action</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PagaPhone.Widget.Button.Form.Link">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.TextView.Link</item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+    </style>
+
+    <style name="PagaPhone.Widget.Button.Form.Link.Capitalized">
+        <item name="android:background">@drawable/background_form_button_link</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.Button.Capitalized
+        </item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="PagaPhone.Widget.Button.Form.Link.Capitalized1">
+        <item name="android:background">@drawable/background_form_button_link</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.Button.Capitalized
+        </item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">@dimen/textSizeExtraSmall</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="PagaPhone.Widget.Button.Form.Link.Capitalized2">
+        <item name="android:background">@drawable/background_form_button_link</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.Button.Capitalized
+        </item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">@dimen/textSizeXExtraSmall</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="PagaPhone.Widget.Button.Form.Link.Capitalized3">
+        <item name="android:background">@drawable/background_form_button_link</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.Button.Capitalized
+        </item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">8dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="PagaPhone.Widget.Button.Form.Link.Capitalized4">
+        <item name="android:background">@drawable/background_form_button_link</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.Button.Capitalized
+        </item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="PagaPhone.Widget.TextView.Form">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.TextView</item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">@dimen/textSizeBig</item>
+    </style>
+
+    <style name="PagaPhone.Widget.TextView.Form.Field">
+        <item name="android:background">@drawable/background_light_form_text_view</item>
+        <item name="android:paddingEnd">@dimen/marginNormal</item>
+        <item name="android:paddingStart">@dimen/marginNormal</item>
+        <item name="android:textColorHint">@color/textInactive</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.TextView</item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">@dimen/textSizeNormal</item>
+    </style>
+
+    <style name="PagaPhone.Widget.TextView.Form.Action">
+        <item name="android:background">@drawable/background_form_action_text_view</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.TextView.Action</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+    </style>
+
+    <style name="PagaPhone.Widget.TextView.Form.Action.Tekton">
+        <item name="android:background">@drawable/background_form_action_text_view_tekton</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.TextView.Action</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+    </style>
+
+    <style name="PagaPhone.Widget.TextView.Form.Small">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.TextView.Normal</item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+    </style>
+
+    <style name="PagaPhone.Widget.EditText.Form">
+        <item name="android:background">@drawable/background_light_form_edit_text</item>
+        <item name="android:paddingEnd">@dimen/marginNormal</item>
+        <item name="android:paddingStart">@dimen/marginNormal</item>
+        <item name="android:textColorHint">@color/textInactive</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.TextView</item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">@dimen/textSizeNormal</item>
+    </style>
+
+    <style name="PagaPhone.Widget.EditText.Form.Tekton">
+        <item name="android:background">@drawable/background_light_form_edit_text_tekton</item>
+        <item name="android:paddingEnd">@dimen/marginNormal</item>
+        <item name="android:paddingStart">@dimen/marginNormal</item>
+        <item name="android:textColorHint">@color/textInactive</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.TextView</item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">@dimen/textSizeNormal</item>
+    </style>
+    <style name="BaitStyle">
+        <!-- Aquí puedes personalizar los colores según tus necesidades -->
+        <item name="colorPrimary">@color/blackTekton</item>
+        <item name="colorPrimaryDark">@color/yellowBait</item>
+        <item name="colorAccent">@color/yellowBait</item>
+        <!-- Otros atributos de estilo -->
+    </style>
+
+    <style name="pagaCelDataPickerStyle">
+        <!-- Aquí puedes personalizar los colores según tus necesidades -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">#e3603c</item>
+        <item name="colorAccent">@color/primary</item>
+        <!-- Otros atributos de estilo -->
+    </style>
+
+
+    <style name="PagaPhone.Widget.EditText.Form.SingleInput">
+        <item name="android:background">@drawable/background_light_form_edit_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingEnd">@dimen/marginXSmall</item>
+        <item name="android:paddingStart">@dimen/marginXSmall</item>
+        <item name="android:textAppearance">@style/PagaPhone.TextAppearance.TextView</item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">@dimen/textSizeNormal</item>
+    </style>
+
+
+</resources>

@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+    <application>
+        <activity
+            android:name=".sdk.compatibility.orange_compatibility.view.activities.MyPlanActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
+        <activity
+            android:name=".sdk.compatibility.orange_compatibility.view.activities.ValidateServiceActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
+        <activity
+            android:name=".sdk.compatibility.orange_compatibility.view.activities.AutoSettingsMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sdk.compatibility.orange_compatibility.view.activities.CompatibilityImeiActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
+        <activity
+            android:name=".sdk.compatibility.orange_compatibility.view.activities.TutorialsHelpActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
+    </application>
+
 </manifest>

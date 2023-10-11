@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/radiusSmall"
+    android:background="@color/whiteTekton"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteTekton"
+        >
+
+        <TextView
+            android:id="@+id/dialogCompatibilityInfoTitleTextView"
+            style="@style/PagaPhone.TextAppearance.TextView.Form.Title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginStandard"
+            android:gravity="center"
+            android:text="Consulta de imei correcta"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/dialogCompatibilityInfoContentLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginNormal"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogCompatibilityInfoTitleTextView">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginSmall"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoIMEITitleTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form.Title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="IMEI: " />
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoIMEITextView"
+                    style="@style/PagaPhone.TextAppearance.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="0000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginSmall"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoBlockedTitleTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form.Title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Bloqueado: " />
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoBlockedTextView"
+                    style="@style/PagaPhone.TextAppearance.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Si" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginSmall"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoSubCategoryTitleTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form.Title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Sub Categoria: " />
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoSubCategoryTextView"
+                    style="@style/PagaPhone.TextAppearance.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Ninguna" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginSmall"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoEsimTitleTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form.Title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Soporta Esim: " />
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoEsimTextView"
+                    style="@style/PagaPhone.TextAppearance.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="puede ser" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginSmall"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoVolteCapableTitleTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form.Title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Soporta VoLTE: " />
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoVolteCapableTextView"
+                    style="@style/PagaPhone.TextAppearance.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="puede ser" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginSmall"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoBand28TitleTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form.Title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Band28: " />
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoBand28TextView"
+                    style="@style/PagaPhone.TextAppearance.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="puede ser" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginSmall"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoModelTitleTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form.Title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Modelo: " />
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoModelTextView"
+                    style="@style/PagaPhone.TextAppearance.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="puede ser" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginSmall"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoBrandTitleTextView"
+                    style="@style/PagaPhone.TextAppearance.TextView.Form.Title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Marca: " />
+
+                <TextView
+                    android:id="@+id/dialogCompatibilityInfoBrandTextView"
+                    style="@style/PagaPhone.TextAppearance.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="puede ser" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dialogCompatibilityInfoAceptButton"
+                style="@style/PagaPhone.Widget.TextView.Form.Action"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonSizeNormal"
+                android:layout_margin="@dimen/marginNormal"
+                android:drawablePadding="@dimen/marginXSmall"
+                android:gravity="center"
+                android:paddingStart="@dimen/marginXSmall"
+                android:paddingEnd="@dimen/marginXSmall"
+                android:text="Aceptar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/dialogCompatibilityInfoContentLinearLayout"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/dialogCompatibilityInfoContentLinearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/dialogCompatibilityInfoContentLinearLayout"
+                app:layout_constraintVertical_bias="0.998" />
+
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

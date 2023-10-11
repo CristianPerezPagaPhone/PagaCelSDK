@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="verify_imei">Verificar</string>
+    <string name="back_pp">Volver a PagaCel</string>
+    <string name="update_documents">Actualizar documentos</string>
+
+    <string name="imei_mask">####-####-####-###</string>
+    <string name="phone_mask">##-####-####</string>
+    <string name="app_name_orange">PagaCelMyMobile</string>
+    <string name="warning_imei">Ingresa correctamente tu IMEI</string>
+    <string name="warning_no_available_to_operate">"Lo sentimos, no es posible realizar transacciones en este momento"</string>
+
+    <string name="error_util">Ocurrio un error intentalo más tarde</string>
+    <string name="error_conexion_util">Error de conexión intentalo más tarde</string>
+    <string name="charging_points_not_found">No se encontraron puntos de recarga cercanos a tu ubicación</string>
+
+    <string name="cta_compatibility">Compatibilidad</string>
+    <string name="cta_portability">Portabilidad</string>
+    <string name="cta_charging_points">Puntos de recarga</string>
+    <!--<string name="cta_my_orange">Mi plan OrangeMyMobile</string>-->
+    <string name="cta_my_orange">Mi plan PagaCel</string>
+    <string name="cta_cell_phone_minutes_orange">Recargar Mi PagaCel</string>
+    <string name="cta_bifrost">MB -> $$</string>
+
+    <string name="action_orange_support">Soporte</string>
+
+    <string name="act_portability_title">Portabilidad</string>
+    <string name="act_compatibility_title">Compatibilidad</string>
+    <string name="act_compatibility_imei_ayuda">¿Qué es el IMEI?</string>
+    <string name="act_charging_points_title">Puntos de recarga</string>
+
+    <string name="fr_compatibility_imei">Introduce el IMEI de tu equipo celular</string>
+    <!--<string name="fr_compatibility_description">Verifica si tu equipo es compatible con el servicio OrangeMyMobile, ingresa tu IMEI para verificarlo.</string>-->
+    <string name="fr_compatibility_description">Verifica si tu equipo es compatible con el servicio PagaCelMyMobile, ingresa tu IMEI para verificarlo.</string>
+
+    <string name="dialog_ayuda_imei_title">Ayuda IMEI</string>
+    <string name="dialog_ayuda_imei_description">Si no cuentas con tu IMEI puedes encontrarlo buscando en el reverso de la caja dónde
+        venía el equipo cuándo lo compraste, si no tienes la caja puedes seguir los siguientes pasos
+        para obtener tu IMEI.</string>
+    <string name="dialog_ayuda_imei_step_one">1.- Marca desde tu teléfono *#06#</string>
+    <string name="dialog_ayuda_imei_step_two">2- Listo ahora tendras el IMEI de tu dispositivo.</string>
+    <string name="dialog_promotional_title">Cambiate a PagaCelMyMobile</string>
+    <string name="dialog_promotional_subtitle">¿Aún no cuentas con el mejor servicio de telefonia?</string>
+    <string name="dialog_promotional_description">¡Cámbiate a PagaCelMyMobile! Con PagaCelMyMobile ya es posible liberarte de planes costosos y sin grandes beneficios.\n\n ¡Ten siempre datos en tu plan! Y disfruta de más megas por menos dinero en la red más veloz.\n</string>
+    <string name="dialog_result_compatibility">¡ Felicidades tu equipo es compatible con la red PagaCelMyMobile !</string>
+    <string name="dialog_result_no_compatibility">Tu equipo no es compatible con la red PagaCelMyMobile</string>
+    <string name="dialog_result_only_vozapp_compatibility">El equipo es únicamente compatible con VozApp</string>
+    <string name="dialog_result_only_band28_compatibility">El equipo es únicamente compatible con Banda28</string>
+    <string name="dialog_result_validations_imei_not_found">No fue posible verificar el IMEI ingresado, intentalo nuevamente</string>
+    <string name="dialog_promotional_more_info"><a href="https://www.orangemymobile.com.mx/">Saber más... </a></string>
+
+    <string name="act_portability_help_title">Realiza tu portabilidad</string>
+    <string name="act_portability_step_one_title"> Para agilizar tu solicitud prepara los siguientes datos:\n\n * CURP \n  * Número de portabilidad \n * Número PagaCelMyMobile activo</string>
+    <string name="act_portability_step_two_title">LLena el formulario que se muestra a continuación para solicitar la portabilidad y quedará realizada automáticamente en un periodo de hasta 48hrs. </string>
+    <string name="act_portability_step_three_title">Marca al 051 para obtener tu Nip de portabilidad​ o envía un SMS con la palabra NIP al 051</string>
+
+    <string name="fr_portability_input_phone_hint">Número telefónico a 10 digitos</string>
+    <string name="fr_portability_confirm_input_phone_hint">Confirma tú número telefónico</string>
+    <string name="fr_portability_input_imei_hint">IMEI del télefono donde usarás tu servicio</string>
+    <string name="fr_portability_imei_help">Para poder disfrutar de los beneficios PagaCelMyMobile, tu equipo celular debe ser compatible, compruébalo aquí</string>
+    <string name="fr_portability_number">Número telefónico a portar</string>
+    <string name="fr_portability_confirm_number">Confirma tu número telefónico</string>
+    <string name="fr_portability_imei">IMEI</string>
+    <string name="error_portability_different_phone">Los teléfonos no coinciden</string>
+    <string name="error_portability_imei">Ingresa el IMEI correctamente</string>
+    <string name="fr_portability_input_nip_hint">NIP de portabilidad</string>
+    <string name="fr_portability_nip">NIP de portabilidad</string>
+    <string name="error_portability_nip">Ingresa el NIP correctamente</string>
+    <string name="fr_portability_nip_help">Solicita tu NIP de portabilidad en tu actual compañia marcando al 051 aquí</string>
+    <string name="fr_portability_orange_number">Número PagaCelMyMobile (el número temporal debe estar activo con una recarga)</string>
+    <string name="fr_portability_input_orange_number_hint">Número PagaCelMyMobile (temporal)</string>
+    <string name="error_portability_orange_number">Ingresa correctamente el teléfono</string>
+    <string name="fr_portability_curp">CURP</string>
+    <string name="fr_portability_input_curp_hint">Ingresa tu curp</string>
+    <string name="error_portability_curp">Ingresa la curp del titular</string>
+    <string name="fr_portability_name">Nombre(s)</string>
+    <string name="fr_portability_input_name_hint">Nombre(s)</string>
+    <string name="error_portability_name">Ingresa el nombre del titular</string>
+    <string name="fr_portability_firts_name">Primer apellido</string>
+    <string name="fr_portability_input_first_name_hint">Primer apellido</string>
+    <string name="error_portability_first_name">Ingresa el apellido</string>
+    <string name="fr_portability_last_name">Segundo apellido</string>
+    <string name="fr_portability_input_last_name_hint">Segundo apellido</string>
+    <string name="fr_portability_opcional_number">Télefono de contacto</string>
+    <string name="fr_portability_input_opcional_number_hint">Número adicional dónde podemos contactarle</string>
+    <string name="fr_portability_opcional_email">Correo de contacto</string>
+    <string name="fr_portability_input_opcional_email_hint">Correo adicional dónde podemos contactarle</string>
+    <string name="fr_portability_finish_steps">* Te notificaremos en cuanto se apruebe tu solicitud</string>
+    <string name="error_portability_opcional_number">Ingresa el télefono correctamente</string>
+    <string name="error_portability_opcional_email">Ingresa el correo correctamente</string>
+
+    <string name="act_promotional_campaing_title">Cambiate a PagaCelMyMobile</string>
+    <string name="fr_promotional_clear_text">""</string>
+    <string name="act_myplan_no_offer">"No cuentas con una recarga activa"</string>
+    <string name="act_myplan_no_orange_service">"El número de la cuenta PagaCel no es un número de la compañia PagaCelMyMobile"</string>
+
+    <string name="act_bifrost_description">Tus recarga se va a reducir desde: \n %s al %s \nTu plan se va a reducir de la siguiente manera:</string>
+    <string name="act_bifrost_description2"> Presione el botón  "Cambiar" para abonar la cantidad a tu wallet</string>
+
+</resources>

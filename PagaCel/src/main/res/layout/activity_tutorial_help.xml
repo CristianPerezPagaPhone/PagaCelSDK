@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTekton"
+    >
+
+    <ImageView
+        android:id="@+id/tutorialBackgroundTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/backgroundImageHeightSmall"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tutorialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:layout_marginTop="@dimen/marginStandard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tutorialTitleTextView"
+                style="@style/PagaPhone.TextAppearance.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical|start"
+                android:text="@string/act_compatibility_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    >
+
+    <!--<ImageView
+        android:id="@+id/cashInHelpBackgroundTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/backgroundImageHeightSmall"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cashInHelpToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:layout_marginTop="@dimen/marginStandard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cashInHelpTitleTextView"
+                style="@style/PagaPhone.TextAppearance.TextView.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical|start"
+                android:text="@string/title_volte_help"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/cashInStepsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewFitConstraints"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toTopOf="@+id/cashInHelpContinueTextView"
+        app:layout_constraintTop_toBottomOf="@+id/cashInHelpBackgroundTop"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ProgressBar
+        android:id="@+id/cashInStepProgressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="@dimen/minimumHeightComponent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginStandard"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cashInHelpBackgroundTop" />
+
+
+    <TextView
+        android:id="@+id/cashInHelpContinueTextView"
+        style="@style/PagaPhone.Widget.TextView.Form.Action"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonSizeNormal"
+        android:drawablePadding="@dimen/marginXSmall"
+        android:gravity="center"
+        android:paddingStart="@dimen/marginXSmall"
+        android:paddingEnd="@dimen/marginXSmall"
+
+        android:text="@string/title_to_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:drawableEndCompat="@drawable/ic_next" />-->
+
+    <!--<TextView
+        android:id="@+id/tutorialOmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:text="Omitir"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        ></TextView>-->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/introSliderViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintTop_toBottomOf="@+id/tutorialBackgroundTop"
+        tools:layout_editor_absoluteX="0dp"></androidx.viewpager2.widget.ViewPager2>
+
+
+    <LinearLayout
+        android:id="@+id/indicatorsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/introSliderViewPager"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"></LinearLayout>
+
+
+    <!--<com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:minWidth="110dp"
+        android:text="Siguiente"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/indicatorsContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />-->
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:minWidth="110dp"
+        android:text="Siguiente"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/tutorialOmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tutorialOmit"
+        style="@style/PagaPhone.Widget.TextView.Form.Action"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonSizeNormal"
+        android:drawablePadding="@dimen/marginXSmall"
+        android:gravity="center"
+        android:paddingStart="@dimen/marginXSmall"
+        android:paddingEnd="@dimen/marginXSmall"
+        android:text="Ir a configuración"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.998" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

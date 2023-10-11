@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ dimens.xml - ui
+  ~ Created by iamlordalvarado on 6/19/20 4:33 PM
+  ~ Copyright (c) 2020 . All rights reserved.
+  ~ Last modified 6/19/20 4:05 PM
+  -->
+
+<resources>
+
+    <dimen name="space_0">0</dimen>
+    <dimen name="space_1">1</dimen>
+
+    <dimen name="radiusXSmall">4dp</dimen>
+    <dimen name="radiusSmall">8dp</dimen>
+    <dimen name="radiusNormal">16dp</dimen>
+    <dimen name="radiusLarge">20dp</dimen>
+    <dimen name="radiusStandard">24dp</dimen>
+
+    <dimen name="marginXXSmall">2dp</dimen>
+    <dimen name="marginXSmall">4dp</dimen>
+    <dimen name="marginSmall">8dp</dimen>
+    <dimen name="marginMedium">12dp</dimen>
+    <dimen name="marginNormal">16dp</dimen>
+    <dimen name="marginStandard">24dp</dimen>
+    <dimen name="marginBig">32dp</dimen>
+    <dimen name="marginXBig">40dp</dimen>
+    <dimen name="marginLarge">48dp</dimen>
+    <dimen name="marginXLarge">60dp</dimen>
+
+    <dimen name="textSizeXExtraSmall">11sp</dimen>
+    <dimen name="textSizeExtraSmall">12sp</dimen>
+    <dimen name="textSizeSmall">14sp</dimen>
+    <dimen name="textSizeNormal">16sp</dimen>
+    <dimen name="textSizeBig">18sp</dimen>
+    <dimen name="textSizeLarge">20sp</dimen>
+    <dimen name="textSizeXLarge">22sp</dimen>
+    <dimen name="textSizeXXLarge">28sp</dimen>
+    <dimen name="textSizeUltra">32sp</dimen>
+
+    <dimen name="viewFitConstraints">0dp</dimen>
+
+    <dimen name="editTextNormal">44dp</dimen>
+
+    <dimen name="buttonSizeSmall">36dp</dimen>
+    <dimen name="buttonSizeNormal">44dp</dimen>
+
+    <dimen name="spinnerWidthSmall">80dp</dimen>
+    <dimen name="spinnerWidthPreview">40dp</dimen>
+    <dimen name="spinnerHeightPreview">36dp</dimen>
+
+    <dimen name="logoWidth">84dp</dimen>
+    <dimen name="logoHeight">96dp</dimen>
+    <dimen name="logoWidthLarge">108dp</dimen>
+    <dimen name="logoHeightLarge">120dp</dimen>
+
+    <dimen name="toolbarHeight">56dp</dimen>
+    <dimen name="backgroundImageHeight">130dp</dimen>
+    <dimen name="backgroundImageHeightSmall">100dp</dimen>
+
+    <dimen name="captureViewSize">108dp</dimen>
+    <dimen name="captureBottomBarHeight">72dp</dimen>
+
+    <dimen name="stepsBarHeight">24dp</dimen>
+    <dimen name="separatorHeight">1dp</dimen>
+
+    <dimen name="loadingSize">60dp</dimen>
+    <dimen name="dialogWidth">240dp</dimen>
+    <dimen name="dialogWidthLarge">270dp</dimen>
+
+    <dimen name="elevationZero">2dp</dimen>
+    <dimen name="elevationXSmall">2dp</dimen>
+
+    <dimen name="iconSizeSmall">24dp</dimen>
+    <dimen name="iconSize">28dp</dimen>
+    <dimen name="iconSizeBig">44dp</dimen>
+
+    <dimen name="avatarSize">52dp</dimen>
+    <dimen name="avatarMiniSize">44dp</dimen>
+    <dimen name="minimumHeightComponent">200dp</dimen>
+
+    <dimen name="iconNextWidth">16dp</dimen>
+    <dimen name="iconNextHeight">36dp</dimen>
+
+    <dimen name="pinInputDialogWidth">32dp</dimen>
+    <dimen name="bottomSheetMaxHeight">640dp</dimen>
+    <dimen name="bottomSheetPeekHeight">240dp</dimen>
+    <dimen name="remittanceImageSize">70dp</dimen>
+</resources>
